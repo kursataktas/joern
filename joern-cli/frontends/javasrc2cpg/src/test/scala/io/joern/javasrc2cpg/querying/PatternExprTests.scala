@@ -17,7 +17,7 @@ class PatternExprTests extends JavaSrcCode2CpgFixture {
         |  static void sink(String s) { /* Do nothing */ }
         |
         |  void test(Object o) {
-        |    if (foo() instanceof String s) {
+        |    if (foo() instanceof String s && s.isEmpty()) {
         |      sink(s);
         |    }
         |  }
